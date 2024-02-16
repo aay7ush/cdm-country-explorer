@@ -1,8 +1,18 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout'
+import CountryDetails from './pages/CountryDetails'
+import CountryListings from './pages/CountryListings'
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<CountryListings />} />
+          <Route path="/:countryName" element={<CountryDetails />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
