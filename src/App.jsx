@@ -1,16 +1,5 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import CountryDetail from './pages/CountryDetail'
-import CountryListings from './pages/CountryListings'
-
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<CountryListings />} />
-        <Route path="/:countryName" element={<CountryDetail />} />
-      </Routes>
-    </BrowserRouter>
-  )
+  return <h1 className="text-3xl font-bold">Let's build Country Explorer</h1>
 }
 
 export default App
