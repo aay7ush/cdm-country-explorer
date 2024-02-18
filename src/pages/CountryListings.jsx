@@ -15,13 +15,13 @@ const CountryListings = () => {
   }, [])
 
   return (
-    <main className="max-w-6xl mx-auto my-10 px-5">
-      <section className="space-y-5 md:flex md:justify-between md:items-center">
+    <main>
+      <section className="filters">
         <SearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
         <Filter region={region} setRegion={setRegion} />
       </section>
 
-      <section className="p-10 grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <section className="countries">
         {countries
           .filter(
             (country) =>
@@ -32,16 +32,16 @@ const CountryListings = () => {
             <Link
               key={country.numericCode}
               to={`/${country.name}`}
-              className="max-w-60 mx-auto rounded-md overflow-hidden transition duration-300 hover:scale-105"
+              className="country-card"
             >
               <img
-                className="w-full h-40"
+                className="flag"
                 src={country.flags.png}
                 alt="country flag"
               />
 
-              <div className="p-5 bg-white h-full">
-                <p className="text-xl font-bold mb-1">{country.name}</p>
+              <div className="info">
+                <p className="name">{country.name}</p>
 
                 <div className="space-y-1">
                   <p>
