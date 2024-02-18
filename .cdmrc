@@ -1,0 +1,6 @@
+tabs: ["src/App.jsx","src/pages/CountryListings.jsx","src/pages/CountryDetail.jsx","src/components/Filter.jsx","src/components/SearchBox.jsx"]
+terminals:
+  [
+    "bun install && bun run dev",
+  ]
+run-button: bun run dev
