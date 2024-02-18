@@ -9,7 +9,7 @@ body {
   background-size: cover;
 }
 
-@layer components {
+@layer utilities {
   .region {
     @apply transition duration-300 hover:bg-gray-100 py-1 rounded-md;
   }
