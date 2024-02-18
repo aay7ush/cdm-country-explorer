@@ -10,28 +10,21 @@ const Filter = ({ region, setRegion }) => {
   }
 
   return (
-    <div className="space-y-2 relative font-medium w-44 mx-auto md:mx-0">
+    <div className="filter-box">
       <div
-        className="bg-white px-3 py-2 rounded-md cursor-pointer flex gap-3"
+        className="filter-text"
         onClick={() => setShowRegions((prev) => !prev)}
       >
         <p>{region || 'Filter by Region'}</p>
         {region && (
-          <button
-            onClick={() => setRegion('')}
-            className="bg-red-600 px-2 py-0.5 rounded-md text-white"
-          >
+          <button onClick={() => setRegion('')} className="clear-btn">
             Clear
           </button>
         )}{' '}
         {!region && <ChevronsUpDownIcon />}
       </div>
 
-      <div
-        className={`${
-          showRegions ? 'grid' : 'hidden'
-        } bg-white px-3 py-2 rounded-md absolute w-full z-10`}
-      >
+      <div className={`${showRegions ? 'grid' : 'hidden'} filter-options`}>
         <button className="region" onClick={() => handleRegionClick('Africa')}>
           Africa
         </button>
