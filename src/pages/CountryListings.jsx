@@ -1,4 +1,4 @@
 const CountryListings = () => {
-  return <div>CountryListings</div>
+  return <h1>CountryListings</h1>
 }
 export default CountryListings

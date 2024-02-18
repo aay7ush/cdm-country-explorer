@@ -1,4 +1,4 @@
 const SearchBox = () => {
-  return <div>SearchBox</div>
+  return <h1>SearchBox</h1>
 }
 export default SearchBox

@@ -1,4 +1,4 @@
 const Filter = () => {
-  return <div>Filter</div>
+  return <h1>Filter</h1>
 }
 export default Filter

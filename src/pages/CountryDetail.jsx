@@ -1,4 +1,4 @@
 const CountryDetail = () => {
-  return <div>CountryDetail</div>
+  return <h1>CountryDetail</h1>
 }
 export default CountryDetail
