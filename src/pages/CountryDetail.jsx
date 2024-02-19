@@ -17,22 +17,19 @@ const CountryDetail = () => {
   return (
     <>
       {country && (
-        <main className="max-w-6xl mx-auto my-10 px-5 space-y-10">
-          <Link
-            to=".."
-            className="flex items-center font-medium gap-2 bg-white w-fit px-3 py-2 rounded-md"
-          >
+        <main>
+          <Link to=".." className="back-btn">
             <ArrowLeft />
             <p>Back</p>
           </Link>
 
-          <section className="grid gap-10 lg:grid-cols-2 lg:gap-20">
+          <section className="detail-container">
             <img className="w-full" src={country.flag} alt="country flag" />
 
-            <div className="space-y-7 bg-white rounded-md p-5">
+            <div className="details">
               <p className="text-3xl font-bold">{country.name}</p>
 
-              <div className="grid gap-5 lg:grid-cols-2 lg:items-start">
+              <div className="info">
                 <div className="space-y-2">
                   <p>
                     <span className="font-medium">Native Name:</span>{' '}

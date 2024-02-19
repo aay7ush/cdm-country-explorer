@@ -67,4 +67,20 @@ body {
   .filter-options {
     @apply bg-white px-3 py-2 rounded-md absolute w-full z-10;
   }
+
+  .back-btn {
+    @apply flex items-center font-medium gap-2 bg-white w-fit px-3 py-2 rounded-md mb-10;
+  }
+
+  .detail-container {
+    @apply grid gap-10 lg:grid-cols-2 lg:gap-20;
+  }
+
+  .detail-container .details {
+    @apply space-y-7 bg-white rounded-md p-5;
+  }
+
+  .details .info {
+    @apply grid gap-5 lg:grid-cols-2 lg:items-start;
+  }
 }
